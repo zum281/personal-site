@@ -1,17 +1,38 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="My name is Fulvia, I'm a person, and this is my personal site. I do web development and a lot of reading."
+    />
     <title>FM | Simpler Web</title>
     <link href="/src/style.css" rel="stylesheet" />
   </head>
   <body
-    class="min-h-screen flex flex-col bg-slate-200 text-slate-800 dark:bg-slate-800 dark:text-slate-200 font-apfel leading-[1.6] text-lg max-md:px-4 light:bg-gradient-to-r from-slate-50 via-slate-100 to-slate-200"
+    class="min-h-screen flex flex-col bg-slate-200 text-slate-800 dark:bg-slate-800 dark:text-slate-200 font-apfel leading-[1.6] text-lg max-md:px-4 light:bg-gradient-to-r from-slate-50 via-slate-100 to-slate-200 transition-colors duration-700 ease-in-out"
   >
-    <header class="py-8 mx-auto max-w-2xl w-full">
-      <span>Fulvia Mourikis - Web Developer</span>
-      <button></button>
+    <header
+      class="py-8 mx-auto max-w-2xl w-full flex items-center justify-between"
+    >
+      <span>Fulvia Mourikis</span>
+      <label class="inline-flex items-center cursor-pointer">
+        <input
+          type="checkbox"
+          value=""
+          class="sr-only peer"
+          checked
+          onchange="toggletheme()"
+        />
+        <div
+          class="shadow-sm shadow-slate-300 dark:shadow-slate-700 border-slate-300 relative w-11 h-6 bg-slate-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-slate-300 dark:peer-focus:ring-slate-800 rounded-full peer dark:bg-slate-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-slate-600 peer-checked:bg-slate-600 dark:peer-checked:bg-slate-600"
+        ></div>
+        <span
+          class="ms-3 text-sm font-medium text-slate-800 dark:text-slate-200"
+          >Theme</span
+        >
+      </label>
     </header>
     <main class="grow mx-auto max-w-2xl space-y-8 w-full py-8 border-y">
       <section class="space-y-2">
@@ -20,29 +41,113 @@
         >
           Humans are not products.
         </h1>
-        <p class="text-sm">But that's not we you're here, is it?</p>
-        <p class="text-sm">Alright, here you go:</p>
+        <p class="text-sm text-slate-600 dark:text-slate-400 italic">
+          (But that's not we you're here, is it? Alright, here you go)
+        </p>
       </section>
       <section class="space-y-2">
-        <h2 class="text-2xl underline">Some nice reading</h2>
+        <h2 class="text-3xl">Some nice reading</h2>
         <ul class="grid md:grid-cols-2 gap-4">
-          <li><a href="#">Essay 1</a></li>
-          <li><a href="#">Essay 2</a></li>
-          <li><a href="#">Essay 3</a></li>
-          <li><a href="#">Essay 4</a></li>
+          <li>
+            <a
+              href="https://substack.com/inbox/post/161282329"
+              target="_blank"
+              class="block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-sm hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700"
+            >
+              <h3 class="mb-1 text-xl font-bold text-slate-900 dark:text-white">
+                Earnest Is Punk
+              </h3>
+              <p class="font-normal text-sm text-slate-700 dark:text-slate-400">
+                by Harnidh Kaur
+              </p>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              target="_blank"
+              class="block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-sm hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700"
+            >
+              <h3 class="mb-1 text-xl font-bold text-slate-900 dark:text-white">
+                Essay 2
+              </h3>
+              <p class="font-normal text-sm text-slate-700 dark:text-slate-400">
+                by
+              </p>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-sm hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700"
+            >
+              <h3 class="mb-1 text-xl font-bold text-slate-900 dark:text-white">
+                Essay 3
+              </h3>
+              <p class="font-normal text-sm text-slate-700 dark:text-slate-400">
+                by
+              </p>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-sm hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700"
+            >
+              <h3 class="mb-1 text-xl font-bold text-slate-900 dark:text-white">
+                Essay 4
+              </h3>
+              <p class="font-normal text-sm text-slate-700 dark:text-slate-400">
+                by
+              </p>
+            </a>
+          </li>
         </ul>
       </section>
       <section class="space-y-2">
-        <h2 class="text-2xl underline">Here's some stuff I've built</h2>
+        <h2 class="text-3xl">Here's some stuff I've built</h2>
         <ul class="grid md:grid-cols-2 gap-4">
-          <li><a href="#">Project 1</a></li>
-          <li><a href="#">Project 2</a></li>
-          <li><a href="#">Project 3</a></li>
-          <li><a href="#">Project 4</a></li>
+          <li>
+            <a
+              href="https://github.com/zum281/personal-site"
+              target="_blank"
+              class="block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-sm hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700"
+            >
+              <h3 class="mb-1 text-xl font-bold text-slate-900 dark:text-white">
+                This website
+              </h3>
+              <p class="font-normal text-sm text-slate-700 dark:text-slate-400">
+                The site you're visiting right now. Like it? Built with plain
+                old html, tailwind, and vite.
+              </p>
+            </a>
+          </li>
         </ul>
       </section>
       <section class="space-y-2">
-        <h2 class="text-2xl underline">Contact me (boring)</h2>
+        <span class="text-sm text-slate-600 italic dark:text-slate-400"
+          >// TODO add logos</span
+        >
+        <h2 class="text-3xl">Some tech I'm comfortable with</h2>
+        <ul class="flex items-center gap-4">
+          <li>React</li>
+          <li>TypeScript</li>
+          <li>Next.js</li>
+          <li>Gatsby</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+
+        <h3 class="text-xl underline">...and some that I'm still learning</h3>
+        <ul class="flex items-center gap-4">
+          <li>Node.js</li>
+          <li>Go</li>
+        </ul>
+      </section>
+
+      <section class="space-y-2">
+        <h2 class="text-3xl">Contact me (boring)</h2>
         <p>
           I guess you can either
           <a href="mailto:zum281@gmail.com">send me an email</a> or
@@ -102,4 +207,11 @@
       </section>
     </footer>
   </body>
+  <script defer>
+    function toggletheme() {
+      const theme = document.documentElement.getAttribute("data-theme");
+      const newTheme = theme === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", newTheme);
+    }
+  </script>
 </html>

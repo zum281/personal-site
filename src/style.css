@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+html[data-theme="dark"] {
+  --display-when-light: 1;
+  --display-when-dark: 0;
+}
+html[data-theme="light"] {
+  --display-when-light: 0;
+  --display-when-dark: 1;
+}
+
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 @font-face {
