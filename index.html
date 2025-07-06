@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -46,13 +46,13 @@
         </p>
       </section>
       <section class="space-y-2">
-        <h2 class="text-3xl">Some nice reading</h2>
+        <h2 class="text-3xl font-bold">Some nice reading</h2>
         <ul class="grid md:grid-cols-2 gap-4">
           <li>
             <a
               href="https://substack.com/inbox/post/161282329"
               target="_blank"
-              class="block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-sm hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700"
+              class="block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-sm hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700 h-full"
             >
               <h3 class="mb-1 text-xl font-bold text-slate-900 dark:text-white">
                 Earnest Is Punk
@@ -66,7 +66,7 @@
             <a
               href="#"
               target="_blank"
-              class="block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-sm hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700"
+              class="block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-sm hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700 h-full"
             >
               <h3 class="mb-1 text-xl font-bold text-slate-900 dark:text-white">
                 Essay 2
@@ -79,7 +79,7 @@
           <li>
             <a
               href="#"
-              class="block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-sm hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700"
+              class="block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-sm hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700 h-full"
             >
               <h3 class="mb-1 text-xl font-bold text-slate-900 dark:text-white">
                 Essay 3
@@ -92,7 +92,7 @@
           <li>
             <a
               href="#"
-              class="block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-sm hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700"
+              class="block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-sm hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700 h-full"
             >
               <h3 class="mb-1 text-xl font-bold text-slate-900 dark:text-white">
                 Essay 4
@@ -105,13 +105,13 @@
         </ul>
       </section>
       <section class="space-y-2">
-        <h2 class="text-3xl">Here's some stuff I've built</h2>
+        <h2 class="text-3xl font-bold">Here's some stuff I've built</h2>
         <ul class="grid md:grid-cols-2 gap-4">
           <li>
             <a
               href="https://github.com/zum281/personal-site"
               target="_blank"
-              class="block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-sm hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700"
+              class="block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-sm hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700 h-full"
             >
               <h3 class="mb-1 text-xl font-bold text-slate-900 dark:text-white">
                 This website
@@ -122,13 +122,44 @@
               </p>
             </a>
           </li>
+          <li>
+            <a
+              href="https://github.com/zum281/task-tracker"
+              target="_blank"
+              class="block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-sm hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700 h-full"
+            >
+              <h3 class="mb-1 text-xl font-bold text-slate-900 dark:text-white">
+                Task tracker CLI
+              </h3>
+              <p class="font-normal text-sm text-slate-700 dark:text-slate-400">
+                A simple command line task manager that lets you track tasks
+                with different states. Written in Go.
+              </p>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/zum281/pick-your-dev"
+              target="_blank"
+              class="block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-sm hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700 h-full"
+            >
+              <h3 class="mb-1 text-xl font-bold text-slate-900 dark:text-white">
+                PickYourDev
+              </h3>
+              <p class="font-normal text-sm text-slate-700 dark:text-slate-400">
+                Little website to figure out your preferences about JS
+                frameworks using ELO. Built with React, TypeScript, Tailwind,
+                Shadcn, Vite.
+              </p>
+            </a>
+          </li>
         </ul>
       </section>
       <section class="space-y-2">
         <span class="text-sm text-slate-600 italic dark:text-slate-400"
           >// TODO add logos</span
         >
-        <h2 class="text-3xl">Some tech I'm comfortable with</h2>
+        <h2 class="text-3xl font-bold">Tech I'm comfortable with</h2>
         <ul class="flex items-center gap-4">
           <li>React</li>
           <li>TypeScript</li>
@@ -138,40 +169,93 @@
           <li>CSS</li>
           <li>JavaScript</li>
         </ul>
-
-        <h3 class="text-xl underline">...and some that I'm still learning</h3>
-        <ul class="flex items-center gap-4">
-          <li>Node.js</li>
-          <li>Go</li>
-        </ul>
+        <div>
+          <h3 class="text-xl font-bold">...and some that I'm still learning</h3>
+          <ul class="flex items-center gap-4">
+            <li>Node.js</li>
+            <li>Go</li>
+          </ul>
+        </div>
       </section>
-
       <section class="space-y-2">
-        <h2 class="text-3xl">Contact me (boring)</h2>
-        <p>
-          I guess you can either
-          <a href="mailto:zum281@gmail.com">send me an email</a> or
-          <a href="#">download my cv</a>.
-        </p>
-
-        <h3 class="text-xl underline">...and here's my socials!</h3>
-        <ul class="flex flex-wrap items-center gap-4">
-          <li>
-            <a href="https://github.com/zum281">GitHub</a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/fulvia-mourikis-6859a1108/"
-              >LinkedIn</a
-            >
-          </li>
-          <li><a href="https://substack.com/@fulviamourikis">Substack</a></li>
-          <li>
+        <h2 class="text-3xl font-bold">
+          Oh, you wanted to know more about me?
+        </h2>
+        <div>
+          <p>I'm Fulvia, I make <del>software</del> websites.</p>
+          <p>
+            I'm currently working as a frontend developer, wannabe fullstack.
+          </p>
+          <p>
+            I like cats, reading, starting side projects that i never finish,
+            and I hate leaving the house but I love being in a park, or garden,
+            or in nature in general (if someone is making progress on the whole
+            "teleportation" thing, please let me know, I'm interested).
+          </p>
+        </div>
+        <div>
+          <h3 class="font-bold">Want to contact me?</h3>
+          <p>
+            I guess you can
             <a
-              href="https://www.goodreads.com/user/show/180070172-fulvia-mourikis"
-              >Goodreads</a
+              href="mailto:zum281@gmail.com"
+              class="hover:underline hover:text-slate-700 dark:hover:text-slate-400 font-bold transition-all duration-300 ease-in-out"
+              >send me an email</a
+            >.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-bold">...and here's my socials!</h3>
+          <ul class="flex flex-wrap items-center gap-4">
+            <li>
+              <a
+                href="https://github.com/zum281"
+                target="_blank"
+                class="hover:underline hover:text-slate-700 dark:hover:text-slate-400 transition-all duration-300 ease-in-out"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/fulvia-mourikis-6859a1108/"
+                target="_blank"
+                class="hover:underline hover:text-slate-700 dark:hover:text-slate-400 transition-all duration-300 ease-in-out"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://substack.com/@fulviamourikis"
+                target="_blank"
+                class="hover:underline hover:text-slate-700 dark:hover:text-slate-400 transition-all duration-300 ease-in-out"
+                >Substack</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.goodreads.com/user/show/180070172-fulvia-mourikis"
+                target="_blank"
+                class="hover:underline hover:text-slate-700 dark:hover:text-slate-400 transition-all duration-300 ease-in-out"
+                >Goodreads</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold">
+            ...all for the other stuff like work experience, instruction, etc.
+          </h3>
+          <p>
+            you can just
+            <a
+              href="#"
+              target="_blank"
+              class="hover:underline hover:text-slate-700 dark:hover:text-slate-400 transition-all duration-300 ease-in-out font-bold"
+              >download my cv</a
             >
-          </li>
-        </ul>
+          </p>
+        </div>
       </section>
     </main>
     <footer class="mx-auto max-w-2xl w-full py-8 text-sm space-y-2">
