@@ -1,8 +1,6 @@
 # Personal Site
 
-**[Live Site →](https://fulvia-mourikis.vercel.app)**
-
-> I'm just a person
+**[That's the one. This one here.](https://fulvia-mourikis.vercel.app)**
 
 My personal website.
 
@@ -21,7 +19,3 @@ This is my personal site, so I'm not looking for contributions. But feel free to
 ## Credits
 
 - **Fonts**: [Moche](https://www.typo.pepite.world/fonderie/moche/) and [Apfel Grotezk](https://www.collletttivo.it/typefaces/apfel-grotezk)
-
----
-
-_"Stop overengineering everything."_
