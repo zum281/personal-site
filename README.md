@@ -16,7 +16,7 @@ This is my personal site, so I'm not looking for contributions. But feel free to
 
 - Fork it for your own use
 - Steal ideas you like
-- Ask questions about the approach
+- Ask questions (yeah let's talk!)
 
 ## Credits
 
