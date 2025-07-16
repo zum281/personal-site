@@ -15,6 +15,7 @@ html[data-theme="light"] {
   font-family: "Moche";
   font-weight: regular;
   font-style: normal;
+  font-display: swap;
   src:
     local("Moche"),
     local("Moche-Regular"),
@@ -26,6 +27,7 @@ html[data-theme="light"] {
   font-family: "Moche";
   font-weight: light;
   font-style: normal;
+  font-display: swap;
   src:
     local("Moche"),
     local("Moche-Light"),
@@ -37,6 +39,7 @@ html[data-theme="light"] {
   font-family: "Moche";
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
   src:
     local("Moche"),
     local("Moche-Bold"),
@@ -49,6 +52,7 @@ html[data-theme="light"] {
   font-family: "ApfelGrotezk";
   font-weight: regular;
   font-style: normal;
+  font-display: swap;
   src:
     local("ApfelGrotezk-Regular"),
     url("./assets/fonts/ApfelGrotezk-Regular.woff2") format("woff2"),
