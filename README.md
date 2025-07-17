@@ -1,6 +1,6 @@
 # Personal Site
 
-**[That's the one. This one here.](https://fulvia-mourikis.vercel.app)**
+**[That's the one. This one here.](https://fulviamourikis.xyz/)**
 
 My personal website.
 
