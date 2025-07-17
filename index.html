@@ -306,4 +306,8 @@
       document.documentElement.setAttribute("data-theme", newTheme);
     }
   </script>
+  <script defer>
+    import { injectSpeedInsights } from "@vercel/speed-insights";
+    injectSpeedInsights();
+  </script>
 </html>
