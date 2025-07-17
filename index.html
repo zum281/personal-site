@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,19 +24,12 @@
     <header
       class="py-8 mx-auto max-w-2xl w-full flex items-center justify-between">
       <span>Fulvia Mourikis</span>
-      <label class="inline-flex items-center cursor-pointer">
-        <input
-          type="checkbox"
-          value=""
-          class="sr-only peer"
-          onchange="toggletheme()" />
-        <div
-          class="shadow-sm shadow-slate-300 dark:shadow-slate-700 border-slate-300 relative w-11 h-6 bg-slate-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-slate-300 dark:peer-focus:ring-slate-800 rounded-full peer dark:bg-slate-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-slate-600 peer-checked:bg-slate-600 dark:peer-checked:bg-slate-600"></div>
-        <span
-          class="ms-3 text-sm font-medium text-slate-800 dark:text-slate-200">
-          Theme
-        </span>
-      </label>
+      <button
+        onclick="toggletheme()"
+        class="border border-slate-300 dark:border-slate-700 cursor-pointer rounded p-1 w-10 aspect-square hover:bg-slate-300 dark:hover:bg-slate-700 transition-all duration-300 ease-in-out">
+        <span class="inline-block dark:hidden">&#9789;</span>
+        <span class="hidden dark:inline-block">&#9788;</span>
+      </button>
     </header>
     <main class="grow mx-auto max-w-2xl space-y-8 w-full py-8 border-y">
       <section class="space-y-2">
@@ -316,10 +309,28 @@
     <script defer src="/_vercel/insights/script.js"></script>
   </body>
   <script defer>
+    const storedTheme = localStorage.getItem("theme");
+
+    const darkPreference = window.matchMedia(
+      "(prefers-color-scheme: dark)",
+    ).matches;
+    const theme = storedTheme || (darkPreference ? "dark" : "light");
+
+    document.documentElement.setAttribute("data-theme", theme);
+
+    function setDarkTheme() {
+      localStorage.setItem("theme", "dark");
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+
+    function setLightTheme() {
+      localStorage.setItem("theme", "light");
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+
     function toggletheme() {
-      const theme = document.documentElement.getAttribute("data-theme");
-      const newTheme = theme === "dark" ? "light" : "dark";
-      document.documentElement.setAttribute("data-theme", newTheme);
+      const storedTheme = localStorage.getItem("theme");
+      storedTheme === "light" ? setDarkTheme() : setLightTheme();
     }
   </script>
 </html>
