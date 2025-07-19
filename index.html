@@ -20,9 +20,9 @@
     <meta name="twitter:description" content="I'm just a person." />
   </head>
   <body
-    class="min-h-screen flex flex-col bg-slate-200 text-slate-800 dark:bg-slate-800 dark:text-slate-200 font-apfel leading-[1.6] text-lg max-md:px-4 light:bg-gradient-to-r from-slate-50 via-slate-100 to-slate-200 transition-colors duration-700 ease-in-out">
+    class="h-screen flex flex-col bg-slate-200 text-slate-800 dark:bg-slate-800 dark:text-slate-200 font-apfel leading-[1.6] text-lg max-md:px-4 transition-colors duration-700 ease-in-out">
     <header
-      class="py-8 mx-auto max-w-2xl w-full flex items-center justify-between">
+      class="py-8 mx-auto max-w-4xl w-full flex items-center justify-between">
       <span>Fulvia Mourikis</span>
       <button
         onclick="toggletheme()"
@@ -31,8 +31,9 @@
         <span class="hidden dark:inline-block">&#9788;</span>
       </button>
     </header>
-    <main class="grow mx-auto max-w-2xl space-y-8 w-full py-8 border-y">
-      <section class="space-y-2">
+    <main
+      class="scroll-container grow mx-auto max-w-4xl w-full border-y overflow-y-auto snap-y snap-mandatory motion-reduce:snap-none">
+      <section class="scroll-section">
         <h1
           class="max-xs:break-all text-6xl sm:text-8xl md:text-9xl font-moche font-bold leading-[0.75] mx-auto mb-8 xs:text-pretty">
           Humans are not products
@@ -41,22 +42,17 @@
           (But that's not we you're here, is it? Alright, here you go)
         </p>
       </section>
-      <section class="space-y-2">
-        <h2 class="text-3xl font-bold">Some nice reading</h2>
+      <section class="scroll-section">
+        <h2 class="section-title">Some nice reading</h2>
         <ul class="grid md:grid-cols-2 gap-4">
           <li>
             <a
               href="https://substack.com/inbox/post/161282329"
               target="_blank"
-              class="block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-sm hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700 h-full">
-              <h3 class="mb-1 text-xl font-bold text-slate-900 dark:text-white">
-                Earnest Is Punk
-              </h3>
-              <p class="italic text-xs text-slate-700 dark:text-slate-400">
-                by Harnidh Kaur
-              </p>
-              <p
-                class="font-normal text-sm text-slate-700 dark:text-slate-400 mt-2">
+              class="card">
+              <h3 class="card-title">Earnest Is Punk</h3>
+              <p class="card-meta">by Harnidh Kaur</p>
+              <p class="card-body mt-2">
                 In a world where cynicism is cool, caring is an act of
                 rebellion. And courageous AF.
               </p>
@@ -66,16 +62,13 @@
             <a
               href="https://poeticinterludes.substack.com/p/capitalism-and-the-mental-health"
               target="_blank"
-              class="block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-sm hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700 h-full">
-              <h3 class="mb-1 text-xl font-bold text-slate-900 dark:text-white">
+              class="card">
+              <h3 class="card-title">
                 Capitalism and the Mental Health Crisis: Mental Illness as a
                 Symptom of Capitalist Decay
               </h3>
-              <p class="italic text-xs text-slate-700 dark:text-slate-400">
-                by Poetic Interludes
-              </p>
-              <p
-                class="font-normal text-sm text-slate-700 dark:text-slate-400 mt-2">
+              <p class="card-meta">by Poetic Interludes</p>
+              <p class="card-body mt-2">
                 I know it, you know it, your boss knows it.
               </p>
             </a>
@@ -83,38 +76,31 @@
           <li>
             <a
               href="https://www.harnidh.xyz/p/mirror-scale-reflect"
-              class="block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-sm hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700 h-full">
-              <h3 class="mb-1 text-xl font-bold text-slate-900 dark:text-white">
-                Mirror, Scale, Reflect
-              </h3>
-              <p class="italic text-xs text-slate-700 dark:text-slate-400">
-                by Harnidh Kaur
-              </p>
-              <p
-                class="font-normal text-sm text-slate-700 dark:text-slate-400 mt-2">
+              class="card">
+              <h3 class="card-title">Mirror, Scale, Reflect</h3>
+              <p class="card-meta">by Harnidh Kaur</p>
+              <p class="card-body mt-2">
                 I could write a 42 page review on this. Read it. It's about AI.
               </p>
             </a>
           </li>
         </ul>
       </section>
-      <section class="space-y-2">
-        <h2 class="text-3xl font-bold">Some stuff I've built</h2>
+      <section class="scroll-section">
+        <h2 class="section-title">Some stuff I've built</h2>
         <ul class="grid md:grid-cols-2 gap-4">
           <li>
             <a
               href="https://github.com/zum281/personal-site"
               target="_blank"
-              class="block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-sm hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700 h-full">
-              <h3 class="mb-1 text-xl font-bold text-slate-900 dark:text-white">
-                This website
-              </h3>
-              <p class="font-normal text-sm text-slate-700 dark:text-slate-400">
+              class="card">
+              <h3 class="card-title">This website</h3>
+              <p class="card-body">
                 The site you're visiting right now. Like it? Built with plain
                 old html, tailwind, and vite.
               </p>
 
-              <p class="italic text-xs text-slate-700 dark:text-slate-400 mt-2">
+              <p class="card-meta mt-2">
                 Warning: Contains very interesting essays (not written by me).
               </p>
             </a>
@@ -123,15 +109,13 @@
             <a
               href="https://github.com/zum281/task-tracker"
               target="_blank"
-              class="block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-sm hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700 h-full">
-              <h3 class="mb-1 text-xl font-bold text-slate-900 dark:text-white">
-                Task tracker CLI
-              </h3>
-              <p class="font-normal text-sm text-slate-700 dark:text-slate-400">
+              class="card">
+              <h3 class="card-title">Task tracker CLI</h3>
+              <p class="card-body">
                 Command line task manager built while learning Go. Building
                 productivity tools is easier than actually being productive.
               </p>
-              <p class="italic text-xs text-slate-700 dark:text-slate-400 mt-2">
+              <p class="card-meta mt-2">
                 Did not help with finishing other side projects.
               </p>
             </a>
@@ -140,18 +124,18 @@
             <a
               href="https://github.com/zum281/pick-your-dev"
               target="_blank"
-              class="block max-w-sm p-6 bg-white border border-slate-200 rounded-lg shadow-sm hover:bg-slate-100 dark:bg-slate-800 dark:border-slate-700 dark:hover:bg-slate-700 h-full">
-              <h3 class="mb-1 text-xl font-bold text-slate-900 dark:text-white">
+              class="card">
+              <h3 class="card-title">
                 Pick Your Dev
                 <span class="text-xs">(naming in progress)</span>
               </h3>
-              <p class="font-normal text-sm text-slate-700 dark:text-slate-400">
+              <p class="card-body">
                 Silly developer quiz to discover your favorite framework. We all
                 know that's what makes you a
                 <em>real</em>
                 developer, right?
               </p>
-              <p class="italic text-xs text-slate-700 dark:text-slate-400 mt-2">
+              <p class="card-meta mt-2">
                 Fair warning: the ranking algorithm is
                 <s>questionable at best</s>
                 improved.
@@ -160,8 +144,8 @@
           </li>
         </ul>
       </section>
-      <section class="space-y-2">
-        <h2 class="text-3xl font-bold">Tech I'm comfortable with</h2>
+      <section class="scroll-section">
+        <h2 class="section-title">Tech I'm comfortable with</h2>
         <ul class="flex items-center gap-4 overflow-scroll">
           <li>React</li>
           <li>TypeScript</li>
@@ -173,15 +157,15 @@
           <li>Tailwind</li>
         </ul>
         <div>
-          <h3 class="text-xl font-bold">...and some that I'm still learning</h3>
+          <h3 class="subsection-title">...and some that I'm still learning</h3>
           <ul class="flex items-center gap-4">
             <li>Node.js</li>
             <li>Go</li>
           </ul>
         </div>
       </section>
-      <section class="space-y-2">
-        <h2 class="text-3xl font-bold">Do you want to know more about me?</h2>
+      <section class="scroll-section">
+        <h2 class="section-title">Do you want to know more about me?</h2>
         <div class="space-y-1">
           <p>I'm Fulvia, currently working as a frontend developer.</p>
           <p>
@@ -203,9 +187,7 @@
           <h3 class="font-bold">Want to contact me?</h3>
           <p>
             <span>&#8594;</span>
-            <a
-              href="mailto:zum281@gmail.com"
-              class="underline hover:text-pink-500 font-bold transition-all duration-300 ease-in-out">
+            <a href="mailto:zum281@gmail.com" class="link font-bold">
               send me an email
             </a>
             .
@@ -216,10 +198,7 @@
           <h3 class="font-bold">...and here's my socials!</h3>
           <ul class="flex flex-wrap items-center gap-4">
             <li>
-              <a
-                href="https://github.com/zum281"
-                target="_blank"
-                class="underline hover:text-pink-500 transition-all duration-300 ease-in-out">
+              <a href="https://github.com/zum281" target="_blank" class="link">
                 GitHub
               </a>
             </li>
@@ -227,7 +206,7 @@
               <a
                 href="https://www.linkedin.com/in/fulvia-mourikis-6859a1108/"
                 target="_blank"
-                class="underline hover:text-pink-500 transition-all duration-300 ease-in-out">
+                class="link">
                 LinkedIn
               </a>
             </li>
@@ -235,7 +214,7 @@
               <a
                 href="https://substack.com/@fulviamourikis"
                 target="_blank"
-                class="underline hover:text-pink-500 transition-all duration-300 ease-in-out">
+                class="link">
                 Substack
               </a>
             </li>
@@ -243,7 +222,7 @@
               <a
                 href="https://www.goodreads.com/user/show/180070172-fulvia-mourikis"
                 target="_blank"
-                class="underline hover:text-pink-500 transition-all duration-300 ease-in-out">
+                class="link">
                 Goodreads
               </a>
             </li>
@@ -255,17 +234,14 @@
           </h3>
           <p>
             <span>&#8594;</span>
-            <a
-              href="/cv.pdf"
-              target="_blank"
-              class="underline hover:text-pink-500 transition-all duration-300 ease-in-out font-bold">
+            <a href="/cv.pdf" target="_blank" class="link font-bold">
               take a look at my cv
             </a>
           </p>
         </div>
       </section>
     </main>
-    <footer class="mx-auto max-w-2xl w-full py-8 text-sm space-y-2">
+    <footer class="mx-auto max-w-4xl w-full py-8 text-sm space-y-2">
       <p>
         This site was made with plain html and no fancy framework because
         there's nothing special about this.
@@ -279,7 +255,7 @@
             <a
               href="https://www.typo.pepite.world/fonderie/moche/"
               target="_blank"
-              class="font-moche font-bold">
+              class="font-moche link font-bold">
               Moche
             </a>
             font (bold)
@@ -288,7 +264,7 @@
             <a
               href="https://www.collletttivo.it/typefaces/apfel-grotezk"
               target="_blank"
-              class="font-apfel">
+              class="link">
               Apfel Grotezk
             </a>
             font
@@ -337,5 +313,32 @@
       const storedTheme = localStorage.getItem("theme");
       storedTheme === "light" ? setDarkTheme() : setLightTheme();
     }
+  </script>
+  <script defer>
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+        e.preventDefault();
+
+        const prefersReducedMotion = window.matchMedia(
+          "(prefers-reduced-motion: reduce)",
+        ).matches;
+        if (prefersReducedMotion) return;
+
+        const scrollContainer = document.querySelector(".scroll-container");
+        const sections = document.querySelectorAll(".scroll-section");
+        const currentScroll = scrollContainer.scrollTop;
+        const sectionHeight = window.innerHeight;
+        const currentIndex = Math.round(currentScroll / sectionHeight);
+
+        let targetIndex;
+        if (e.key === "ArrowDown") {
+          targetIndex = Math.min(currentIndex + 1, sections.length - 1);
+        } else {
+          targetIndex = Math.max(currentIndex - 1, 0);
+        }
+
+        sections[targetIndex].scrollIntoView({ behavior: "smooth" });
+      }
+    });
   </script>
 </html>
