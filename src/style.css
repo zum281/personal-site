@@ -76,7 +76,7 @@ html[data-theme="light"] {
 
 @layer components {
   .scroll-section {
-    @apply space-y-2 h-screen place-content-center snap-start motion-reduce:min-h-auto motion-reduce:place-content-start;
+    @apply space-y-2 h-full place-content-center snap-center motion-reduce:min-h-auto motion-reduce:place-content-start;
   }
 
   .section-title {
