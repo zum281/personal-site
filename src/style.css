@@ -18,3 +18,12 @@ html[data-theme="light"] {
   --font-title: "Silkscreen", monospace;
   --breakpoint-xs: 23rem;
 }
+
+@layer components {
+  .link {
+    @apply pb-2 block border-b hover:border-pink-500 border-slate-500 dark:bg-slate-800 dark:border-slate-700 h-full hover:[&>h3]:text-pink-500 transition-all duration-100 ease-in-out;
+  }
+  .link > h3 {
+    @apply mb-1 text-xl font-bold text-slate-900 dark:text-white;
+  }
+}
