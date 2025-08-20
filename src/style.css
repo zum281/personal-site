@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "@fontsource/unifontex";
+@import "@fontsource/silkscreen";
 
 html[data-theme="dark"] {
   --display-when-light: 1;
@@ -11,55 +13,8 @@ html[data-theme="light"] {
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
-@font-face {
-  font-family: "Moche";
-  font-weight: regular;
-  font-style: normal;
-  font-display: swap;
-  src:
-    local("Moche"),
-    local("Moche-Regular"),
-    url("./assets/fonts/Moche-Regular.eot") format("embedded-opentype"),
-    url("./assets/fonts/Moche-Regular.woff2") format("woff2"),
-    url("./assets/fonts/Moche-Regular.woff") format("woff");
-}
-@font-face {
-  font-family: "Moche";
-  font-weight: light;
-  font-style: normal;
-  font-display: swap;
-  src:
-    local("Moche"),
-    local("Moche-Light"),
-    url("./assets/fonts/Moche-Light.eot") format("embedded-opentype"),
-    url("./assets/fonts/Moche-Light.woff2") format("woff2"),
-    url("./assets/fonts/Moche-Light.woff") format("woff");
-}
-@font-face {
-  font-family: "Moche";
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-  src:
-    local("Moche"),
-    local("Moche-Bold"),
-    url("./assets/fonts/Moche-Bold.eot") format("embedded-opentype"),
-    url("./assets/fonts/Moche-Bold.woff2") format("woff2"),
-    url("./assets/fonts/Moche-Bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "ApfelGrotezk";
-  font-weight: regular;
-  font-style: normal;
-  font-display: swap;
-  src:
-    local("ApfelGrotezk-Regular"),
-    url("./assets/fonts/ApfelGrotezk-Regular.woff2") format("woff2"),
-    url("./assets/fonts/ApfelGrotezk-Regular.woff") format("woff");
-}
 @theme {
-  --font-moche: "Moche", "sans-serif";
-  --font-apfel: "ApfelGrotezk", "sans-serif";
+  --font-unifontex: "UnifontEX", monospace;
+  --font-title: "Silkscreen", monospace;
   --breakpoint-xs: 23rem;
 }
