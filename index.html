@@ -19,30 +19,23 @@
     <meta name="twitter:title" content="Fulvia Mourikis" />
     <meta name="twitter:description" content="I'm just a person." />
   </head>
-  <body
-    class="min-h-screen flex flex-col bg-slate-200 text-slate-800 dark:bg-slate-800 dark:text-slate-200 font-unifontex leading-[1.6] text-lg max-md:px-4 light:bg-gradient-to-r from-slate-50 via-slate-100 to-slate-200 transition-colors duration-700 ease-in-out">
-    <header
-      class="py-8 mx-auto max-w-2xl w-full flex items-center justify-between">
+  <body>
+    <header class="flex items-center justify-between">
       <span>Fulvia Mourikis</span>
-      <button
-        onclick="toggletheme()"
-        class="border border-slate-300 dark:border-slate-700 cursor-pointer rounded p-1 w-10 aspect-square hover:bg-slate-300 dark:hover:bg-slate-700 transition-all duration-300 ease-in-out">
+      <button onclick="toggletheme()" class="theme-toggle">
         <span class="inline-block dark:hidden">&#9789;</span>
         <span class="hidden dark:inline-block">&#9788;</span>
       </button>
     </header>
-    <main class="grow mx-auto max-w-2xl space-y-8 w-full py-8 border-y">
-      <section class="space-y-2">
-        <h1
-          class="max-xs:break-all text-6xl sm:text-8xl md:text-9xl font-title font-bold leading-[0.75] mx-auto mb-8 xs:text-pretty">
-          Humans are not products
-        </h1>
+    <main class="grow space-y-8 border-y">
+      <section>
+        <h1>Humans are not products</h1>
         <p class="text-sm text-slate-600 dark:text-slate-400 italic">
           (But that's not we you're here, is it? Alright, here you go)
         </p>
       </section>
-      <section class="space-y-2">
-        <h2 class="text-3xl font-bold">Some nice reading</h2>
+      <section>
+        <h2>Some nice reading</h2>
         <ul class="grid gap-4">
           <li>
             <a
@@ -94,8 +87,8 @@
           </li>
         </ul>
       </section>
-      <section class="space-y-2">
-        <h2 class="text-3xl font-bold">Some stuff I've built</h2>
+      <section>
+        <h2>Some stuff I've built</h2>
         <ul class="grid gap-4">
           <li>
             <a
@@ -106,10 +99,6 @@
               <p class="font-normal text-sm text-slate-700 dark:text-slate-400">
                 The site you're visiting right now. Like it? Built with plain
                 old html, tailwind, and vite.
-              </p>
-
-              <p class="italic text-xs text-slate-700 dark:text-slate-400 mt-2">
-                Warning: Contains very interesting essays (not written by me).
               </p>
             </a>
           </li>
@@ -122,9 +111,6 @@
               <p class="font-normal text-sm text-slate-700 dark:text-slate-400">
                 Command line task manager built while learning Go. Building
                 productivity tools is easier than actually being productive.
-              </p>
-              <p class="italic text-xs text-slate-700 dark:text-slate-400 mt-2">
-                Did not help with finishing other side projects.
               </p>
             </a>
           </li>
@@ -143,18 +129,13 @@
                 <em>real</em>
                 developer, right?
               </p>
-              <p class="italic text-xs text-slate-700 dark:text-slate-400 mt-2">
-                Fair warning: the ranking algorithm is
-                <s>questionable at best</s>
-                improved.
-              </p>
             </a>
           </li>
         </ul>
       </section>
-      <section class="space-y-2">
-        <h2 class="text-3xl font-bold">Tech I'm comfortable with</h2>
-        <ul class="flex items-center gap-4 overflow-scroll">
+      <section>
+        <h2>Tech I'm comfortable with</h2>
+        <ul class="chip-list">
           <li>React</li>
           <li>TypeScript</li>
           <li>Next.js</li>
@@ -165,15 +146,15 @@
           <li>Tailwind</li>
         </ul>
         <div>
-          <h3 class="text-xl font-bold">...and some that I'm still learning</h3>
-          <ul class="flex items-center gap-4">
+          <h3 class="text-lg mt-4 mb-2">...and some that I'm still learning</h3>
+          <ul class="chip-list">
             <li>Node.js</li>
             <li>Go</li>
           </ul>
         </div>
       </section>
-      <section class="space-y-2">
-        <h2 class="text-3xl font-bold">Do you want to know more about me?</h2>
+      <section>
+        <h2>Do you want to know more about me?</h2>
         <div class="space-y-1">
           <p>I'm Fulvia, currently working as a frontend developer.</p>
           <p>
@@ -195,12 +176,9 @@
           <h3 class="font-bold">Want to contact me?</h3>
           <p>
             <span>&#8594;</span>
-            <a
-              href="mailto:zum281@gmail.com"
-              class="underline hover:text-pink-500 font-bold transition-all duration-300 ease-in-out">
-              send me an email
+            <a href="mailto:zum281@gmail.com" class="basic-link">
+              send me an email.
             </a>
-            .
           </p>
         </div>
 
@@ -211,7 +189,7 @@
               <a
                 href="https://github.com/zum281"
                 target="_blank"
-                class="underline hover:text-pink-500 transition-all duration-300 ease-in-out">
+                class="basic-link">
                 GitHub
               </a>
             </li>
@@ -219,7 +197,7 @@
               <a
                 href="https://www.linkedin.com/in/fulvia-mourikis-6859a1108/"
                 target="_blank"
-                class="underline hover:text-pink-500 transition-all duration-300 ease-in-out">
+                class="basic-link">
                 LinkedIn
               </a>
             </li>
@@ -227,7 +205,7 @@
               <a
                 href="https://substack.com/@fulviamourikis"
                 target="_blank"
-                class="underline hover:text-pink-500 transition-all duration-300 ease-in-out">
+                class="basic-link">
                 Substack
               </a>
             </li>
@@ -235,7 +213,7 @@
               <a
                 href="https://www.goodreads.com/user/show/180070172-fulvia-mourikis"
                 target="_blank"
-                class="underline hover:text-pink-500 transition-all duration-300 ease-in-out">
+                class="basic-link">
                 Goodreads
               </a>
             </li>
@@ -247,17 +225,14 @@
           </h3>
           <p>
             <span>&#8594;</span>
-            <a
-              href="/cv.pdf"
-              target="_blank"
-              class="underline hover:text-pink-500 transition-all duration-300 ease-in-out font-bold">
+            <a href="/cv.pdf" target="_blank" class="basic-link">
               take a look at my cv
             </a>
           </p>
         </div>
       </section>
     </main>
-    <footer class="mx-auto max-w-2xl w-full py-8 text-sm space-y-2">
+    <footer class="text-sm space-y-2">
       <p>
         This site was made with plain html and no fancy framework because
         there's nothing special about this.
