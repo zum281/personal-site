@@ -1,6 +1,6 @@
 @import "tailwindcss";
-@import "@fontsource/unifontex";
-@import "@fontsource/silkscreen";
+@import "@fontsource-variable/afacad/wght.css";
+@import "@fontsource/bokor";
 
 html[data-theme="dark"] {
   --display-when-light: 1;
@@ -14,14 +14,14 @@ html[data-theme="light"] {
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 @theme {
-  --font-unifontex: "UnifontEX", monospace;
-  --font-title: "Silkscreen", monospace;
+  --font-base: "Afacad", sans-serif;
+  --font-title: "Bokor", serif;
   --breakpoint-xs: 23rem;
 }
 
 @layer base {
   body {
-    @apply min-h-screen flex flex-col bg-slate-200 text-slate-800 dark:bg-slate-800 dark:text-slate-200 font-unifontex leading-[1.6] text-lg max-md:px-4 transition-colors duration-700 ease-in-out;
+    @apply min-h-screen flex flex-col bg-gray-200 text-gray-950 dark:bg-gray-950 dark:text-gray-200 font-base leading-[1.6] text-lg max-md:px-4 transition-colors duration-700 ease-in-out;
   }
 
   header,
@@ -36,14 +36,14 @@ html[data-theme="light"] {
 
   h1,
   h2 {
-    @apply font-title font-normal leading-[0.75];
+    @apply font-title font-bold tracking-wide;
   }
   h1 {
     @apply max-xs:break-all text-6xl sm:text-7xl md:text-8xl mx-auto mb-8 xs:text-pretty;
   }
 
   h2 {
-    @apply text-xl font-normal text-pink-600 dark:text-pink-400 mb-8 mt-16;
+    @apply text-2xl font-normal text-pink-600 dark:text-pink-400 mb-8 mt-16;
   }
 }
 
@@ -52,20 +52,20 @@ html[data-theme="light"] {
     @apply underline text-pink-600 dark:text-pink-400 hover:text-pink-800 dark:hover:text-pink-200  transition-all duration-300 ease-in-out;
   }
   .theme-toggle {
-    @apply border border-slate-300 dark:border-slate-700 cursor-pointer rounded p-1 w-10 aspect-square hover:bg-slate-300 dark:hover:bg-slate-700 transition-all duration-700 ease-in-out;
+    @apply border border-gray-300 dark:border-gray-700 cursor-pointer rounded p-1 w-10 aspect-square hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-700 ease-in-out;
   }
   .link {
-    @apply pb-2 block border-b dark:hover:border-pink-400 hover:border-pink-600 border-slate-500 dark:bg-slate-800 dark:border-slate-700 h-full hover:[&>h3]:text-pink-600 dark:hover:[&>h3]:text-pink-400 transition-all duration-700 ease-in-out;
+    @apply pb-2 block border-b dark:hover:border-pink-400 hover:border-pink-600 border-gray-500 dark:bg-gray-950 dark:border-gray-700 h-full hover:[&>h3]:text-pink-600 dark:hover:[&>h3]:text-pink-400 transition-all duration-700 ease-in-out;
 
     > h3 {
-      @apply mb-1 text-xl font-bold text-slate-900 dark:text-white;
+      @apply mb-1 text-lg font-bold text-gray-900 dark:text-white;
     }
   }
 
   .chip-list {
     @apply flex items-center gap-2 overflow-scroll;
     > li {
-      @apply dark:bg-pink-100 bg-pink-600 dark:text-slate-700 text-white px-3 text-sm rounded-full;
+      @apply dark:bg-gray-100 bg-pink-600 dark:text-gray-700 text-white px-3 py-1 text-sm rounded-sm;
     }
   }
 }

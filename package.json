@@ -13,8 +13,8 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
-    "@fontsource/silkscreen": "^5.2.6",
-    "@fontsource/unifontex": "^5.2.5",
+    "@fontsource-variable/afacad": "^5.2.10",
+    "@fontsource/bokor": "^5.2.7",
     "@tailwindcss/vite": "^4.1.10",
     "tailwindcss": "^4.1.10"
   }
