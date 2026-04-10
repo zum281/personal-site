@@ -55,7 +55,7 @@ html[data-theme="light"] {
     @apply border border-gray-300 dark:border-gray-700 cursor-pointer rounded p-1 w-10 aspect-square hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-700 ease-in-out;
   }
   .link {
-    @apply pb-2 block border-b dark:hover:border-pink-400 hover:border-pink-600 border-gray-500 dark:bg-gray-950 dark:border-gray-700 h-full hover:[&>h3]:text-pink-600 dark:hover:[&>h3]:text-pink-400 transition-all duration-700 ease-in-out;
+    @apply p-2 block border dark:hover:border-pink-400 hover:border-pink-600 border-gray-500 dark:bg-gray-950 dark:border-gray-700 h-full hover:[&>h3]:text-pink-600 dark:hover:[&>h3]:text-pink-400 transition-all duration-700 ease-in-out;
 
     > h3 {
       @apply mb-1 text-lg font-bold text-gray-900 dark:text-white;
